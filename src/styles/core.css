@@ -1,1 +1,5 @@
+@import "./webfonts.css";
+
 @import "./settings/colours.css";
+
+@import "./generic/typography.css";

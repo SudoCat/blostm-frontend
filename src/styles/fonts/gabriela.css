@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "Gabriela Stencil";
+  font-weight: 100;
+  src: url('/fonts/GabrielaStencilThin/font.woff2') format('woff2'), url('/fonts/GabrielaStencilThin/font.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Gabriela Stencil";
+  font-weight: 100;
+  font-style: italic;
+  src: url('/fonts/GabrielaStencilThinIt/font.woff2') format('woff2'), url('/fonts/GabrielaStencilThinIt/font.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Gabriela Stencil";
+  font-weight: 200;
+  src: url('/fonts/GabrielaStencilUltraLight/font.woff2') format('woff2'), url('/fonts/GabrielaStencilUltraLight/font.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Gabriela Stencil";
+  font-weight: 200;
+  font-style: italic;
+  src: url('/fonts/GabrielaStencilUltraLightIt/font.woff2') format('woff2'), url('/fonts/GabrielaStencilUltraLightIt/font.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Gabriela Stencil";
+  font-weight: 300;
+  src: url('/fonts/GabrielaStencilLight/font.woff2') format('woff2'), url('/fonts/GabrielaStencilLight/font.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Gabriela Stencil";
+  font-weight: 300;
+  font-style: italic;
+  src: url('/fonts/GabrielaStencilLightIt/font.woff2') format('woff2'), url('/fonts/GabrielaStencilLightIt/font.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Gabriela Stencil";
+  font-weight: 400;
+  src: url('/fonts/GabrielaStencilRegular/font.woff2') format('woff2'), url('/fonts/GabrielaStencilRegular/font.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Gabriela Stencil";
+  font-weight: 400;
+  font-style: italic;
+  src: url('/fonts/GabrielaStencilRegularIt/font.woff2') format('woff2'), url('/fonts/GabrielaStencilRegularIt/font.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Gabriela Stencil";
+  font-weight: 700;
+  src: url('/fonts/GabrielaStencilBold/font.woff2') format('woff2'), url('/fonts/GabrielaStencilBold/font.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Gabriela Stencil";
+  font-weight: 700;
+  font-style: italic;
+  src: url('/fonts/GabrielaStencilBoldIt/font.woff2') format('woff2'), url('/fonts/GabrielaStencilBoldIt/font.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Gabriela Stencil";
+  font-weight: 900;
+  src: url('/fonts/GabrielaStencilBlack/font.woff2') format('woff2'), url('/fonts/GabrielaStencilBlack/font.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Gabriela Stencil";
+  font-weight: 900;
+  font-style: italic;
+  src: url('/fonts/GabrielaStencilBlackIt/font.woff2') format('woff2'), url('/fonts/GabrielaStencilBlackIt/font.woff') format('woff');
+}
