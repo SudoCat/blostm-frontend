@@ -1,12 +1,22 @@
 :root {
-  --colour-primary: rgb(53, 233, 104);
-  --colour-secondary: rgb(61, 166, 176);
-  --colour-accent: rgb(225, 45, 138);
-  --colour-light: rgb(240, 240, 240);
-  --colour-dark: rgb(20, 30, 35);
-  --colour-status-error: rgb(241, 43, 63);
-  --colour-status-warning: rgb(255, 196, 20);
-  --colour-status-success: rgb(159, 245, 60);
-  --colour-text-light: white;
-  --colour-text-dark: var(--colour-dark);
+  --colour-primary: 53, 233, 104;
+  --colour-secondary: 61, 166, 176;
+  --colour-accent: 160, 85, 223;
+  --colour-light: 240, 240, 240;
+  --colour-dark: 20, 30, 35;
+  --colour-status-error: 241, 43, 63;
+  --colour-status-warning: 255, 196, 20;
+  --colour-status-success: 159, 245, 60;
+  --text-alpha: 1;
+  --bg-alpha: 1;
+}
+
+*,*::before,*::after {
+  --colour-text-light: rgba(255, 255, 255, var(--text-alpha));
+  --colour-text-dark: rgba(var(--colour-dark), var(--text-alpha));
+  --colour-text-primary: rgba(var(--colour-primary), var(--text-alpha));
+
+  --colour-bg-primary: rgba(var(--colour-primary), var(--bg-alpha));
+  --colour-bg-dark: rgba(var(--colour-dark), var(--bg-alpha));
+  --colour-bg-light: rgba(var(--colour-light), var(--bg-alpha));
 }

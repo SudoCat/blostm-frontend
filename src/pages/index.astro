@@ -4,46 +4,117 @@ import Card from '../components/Card.astro';
 ---
 
 <Layout title="Welcome to Blostm.">
-	<main>
-		<h1>Welcome to <span class="text-gradient">Blostm</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
+	<main data-theme="glitch">
+		<div class="content">
+			<h1>Welcome to <span class="text-gradient">Blostm</span></h1>
+			<p class="instructions">
+				To get started, open the directory <code>src/pages</code> in your project.<br />
+				<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
+			</p>
+			<ul role="list" class="link-card-grid">
+				<Card
+					href="https://docs.astro.build/"
+					title="Documentation"
+					body="Learn how Astro works and explore the official API docs."
+				/>
+				<Card
+					href="https://astro.build/integrations/"
+					title="Integrations"
+					body="Supercharge your project with new frameworks and libraries."
+				/>
+				<Card
+					href="https://astro.build/themes/"
+					title="Themes"
+					body="Explore a galaxy of community-built starter themes."
+				/>
+				<Card
+					href="https://astro.build/chat/"
+					title="Community"
+					body="Come say hi to our amazing Discord community. ❤️"
+				/>
+			</ul>
+		</div>
 	</main>
 </Layout>
 
 <style>
 	main {
+		display: grid;
+		grid-template-columns: 3fr 5fr 1fr;
 		margin: auto;
+		min-height: 100vh;
 		padding: 1.5rem;
-		max-width: 60ch;
+		box-sizing: border-box;
+		/* background-image: url("/public/images/hero/martin-knize-JjT_7MwREm4-unsplash.jpg"); */
+		background-size: cover;
+		background-color: rgba(var(--colour-dark), 1);
+		animation: cover 60s steps(6) infinite forwards;
+	}
+	@keyframes cover {
+		0% {
+			background-image: url("public/images/hero/calvin-kurlekar-jf-kMyCffZA-unsplash.jpg");
+		}
+		16.6% {
+			background-image: url("/public/images/hero/glen-carrie-y8dgMhxaoKk-unsplash.jpg");
+		}
+		33% {
+			background-image: url("/public/images/hero/ignacio-correia-1_yycyoMT6g-unsplash.jpg");
+		}
+		50% {
+			background-image: url("/public/images/hero/martin-knize-JjT_7MwREm4-unsplash.jpg");
+		}
+		66.6% {
+			background-image: url("/public/images/hero/robert-katzki-KLcaQxlmhtk-unsplash.jpg");
+		}
+		83.33% {
+			background-image: url("/public/images/hero/veronica-reverse-qYwyRF9u-uo-unsplash.jpg");
+		}
+	}
+	.content {
+		grid-column: 2;
+		position: relative;
+		max-width: 680px;
+		margin: auto;
+		padding: var(--space-m);
+	}
+	[data-theme="glass"] .content {
+		border: 1px solid rgba(var(--colour-light), 0.9);
+		border-radius: 30px;
+		backdrop-filter: blur(10px);
+		background-image: linear-gradient(#ffffffc2 0%, #ffffff1f 10%, #ffffff36);
+	}
+	[data-theme="glitch"] .content {
+		border: 1px solid rgba(var(--colour-light), 0.9);
+		/* border-radius: 0 120px 0 120px; */
+	}
+	.content > * {
+		position: relative;
+		z-index: 1;
+	}
+	[data-theme="glass"] .content::before {
+		--bg-alpha: 0.5;
+		content: '';
+		position: absolute;
+		inset: -2px;
+		border-radius: inherit;
+		border: 1px solid rgba(var(--colour-dark), 0.05);
+	}
+	[data-theme="glitch"] .content::before {
+		content: '';
+		position: absolute;
+		inset: -16px;
+		border-radius: 200px 0 200px 0;
+		border: 1px solid rgba(var(--colour-dark), 0.05);
+		background-color: rgba(var(--colour-accent), 0.6);
+		mix-blend-mode: difference;
 	}
 	h1 {
-		font-size: 3rem;
-		margin: 0;
+		margin-top: 0;
+		margin-bottom: var(--space-l);
+		line-height: 0.8;
+		text-align: right;
+		color: var(--colour-text-light);
+		mix-blend-mode: exclusion;
 	}
 	.text-gradient {
 		background-image: var(--accent-gradient);
@@ -56,10 +127,20 @@ import Card from '../components/Card.astro';
 	.instructions {
 		line-height: 1.6;
 		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
+		/* border: 2px solid rgba(var(--colour-primary), 50%); */
+		background-color: rgba(var(--colour-light), 1);
 		padding: 1rem;
-		border-radius: 0.4rem;
+		border-radius: 0 0 10rem 0;
+		outline-offset: 4px;
+	}
+	.instructions::before {
+		content: '';
+		position: absolute;
+		inset: -6px 6px 6px -12px;
+		border: 1px dotted rgba(var(--colour-secondary), 90%);
+		border-radius: inherit;
+		mix-blend-mode: exclusion;
+		pointer-events: none;
 	}
 	.instructions code {
 		font-size: 0.875em;

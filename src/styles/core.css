@@ -1,5 +1,7 @@
 @import "./webfonts.css";
 
 @import "./settings/colours.css";
+@import "./settings/scale.css";
 
+@import "./generic/core.css";
 @import "./generic/typography.css";
