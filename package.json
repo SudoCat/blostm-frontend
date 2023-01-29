@@ -17,5 +17,8 @@
     "astro": "^2.0.2",
     "lit": "^2.6.1",
     "solid-js": "^1.6.9"
+  },
+  "devDependencies": {
+    "postcss-import": "^15.1.0"
   }
 }
