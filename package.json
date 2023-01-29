@@ -11,6 +11,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^2.0.2"
+    "@astrojs/lit": "^1.1.0",
+    "@astrojs/solid-js": "^2.0.0",
+    "@webcomponents/template-shadowroot": "^0.1.0",
+    "astro": "^2.0.2",
+    "lit": "^2.6.1",
+    "solid-js": "^1.6.9"
   }
 }
