@@ -52,3 +52,26 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+
+# Blostm Frontend Ideals and Inspirations
+
+Simple, HTML&CSS First, tiered frontend.
+
+Low level reusable CSS style library built upon css props
+Minimal tooling
+Minimal runtime js
+Lit web components for simple reusable component library
+SolidJS for app like behaviour
+
+## Frameworks
+- https://astro.build/
+- https://www.solidjs.com/
+- https://lit.dev/
+
+## Css
+- https://utopia.fyi/
+- https://every-layout.dev/
+- https://cube.fyi/
+- https://itcss.io/
+- https://suitcss.github.io/
