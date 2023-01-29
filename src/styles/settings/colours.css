@@ -1,5 +1,12 @@
 :root {
-  --primary-colour: rgb(53, 233, 104);
-  --secondary-colour: rgb(61, 166, 176);
-  --accent-colour: rgb(225, 45, 138);
+  --colour-primary: rgb(53, 233, 104);
+  --colour-secondary: rgb(61, 166, 176);
+  --colour-accent: rgb(225, 45, 138);
+  --colour-light: rgb(240, 240, 240);
+  --colour-dark: rgb(20, 30, 35);
+  --colour-status-error: rgb(241, 43, 63);
+  --colour-status-warning: rgb(255, 196, 20);
+  --colour-status-success: rgb(159, 245, 60);
+  --colour-text-light: white;
+  --colour-text-dark: var(--colour-dark);
 }
