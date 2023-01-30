@@ -13,24 +13,24 @@ import Card from '../components/Card.astro';
 			</p>
 			<ul role="list" class="link-card-grid">
 				<Card
-					href="https://docs.astro.build/"
-					title="Documentation"
-					body="Learn how Astro works and explore the official API docs."
+					href="/categories/flowers"
+					title="Flowers"
+					body="Bring some beautiful blossoms to your abode."
 				/>
 				<Card
-					href="https://astro.build/integrations/"
-					title="Integrations"
-					body="Supercharge your project with new frameworks and libraries."
+					href="/categories/shrubs"
+					title="Shrubs"
+					body="Search through an array of leafy greens."
 				/>
 				<Card
-					href="https://astro.build/themes/"
-					title="Themes"
-					body="Explore a galaxy of community-built starter themes."
+					href="/categories/succulents"
+					title="Succulents"
+					body="Peruse some succulents."
 				/>
 				<Card
-					href="https://astro.build/chat/"
-					title="Community"
-					body="Come say hi to our amazing Discord community. ❤️"
+					href="/succulents/trees"
+					title="Trees"
+					body="Explore the world of trees."
 				/>
 			</ul>
 		</div>
@@ -125,8 +125,9 @@ import Card from '../components/Card.astro';
 		font-style: italic;
 	}
 	.instructions {
+		left: calc(-1*var(--space-xl));
 		line-height: 1.6;
-		margin: 1rem 0;
+		margin: 1.5rem 0;
 		/* border: 2px solid rgba(var(--colour-primary), 50%); */
 		background-color: rgba(var(--colour-light), 1);
 		padding: 1rem;
@@ -137,7 +138,7 @@ import Card from '../components/Card.astro';
 		content: '';
 		position: absolute;
 		inset: -6px 6px 6px -12px;
-		border: 1px dotted rgba(var(--colour-secondary), 90%);
+		border: 2px dotted rgb(var(--colour-secondary));
 		border-radius: inherit;
 		mix-blend-mode: exclusion;
 		pointer-events: none;
@@ -156,7 +157,7 @@ import Card from '../components/Card.astro';
 	.link-card-grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
+		gap: 1.5rem;
 		padding: 0;
 	}
 </style>
