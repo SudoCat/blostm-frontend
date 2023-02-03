@@ -1,0 +1,20 @@
+---
+import Layout from "../../layouts/Layout.astro"
+
+const { plant } = Astro.params;
+---
+
+<Layout title="Plant">
+  <section class="Hero">
+    <h1>{plant}</h1>
+  </section>
+  <main>
+    Some info about a plant!
+  </main>
+</Layout>
+
+<style>
+  .Hero {
+    margin-inline: ;
+  }
+</style>

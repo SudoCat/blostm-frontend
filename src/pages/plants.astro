@@ -1,0 +1,38 @@
+---
+import Layout from "../layouts/Layout.astro"
+
+---
+
+<Layout title="Plants">
+  <section class="Hero">
+    <h1>Plants</h1>
+  </section>
+  <main>
+    <aside class="Refine">
+      <h2>Refine</h2>
+    </aside>
+    <section class="Results">
+      <h2>Results</h2>
+      <ul>
+        <li>
+          <article>
+            <img />
+            <h3>Plant Name</h3>
+            <p>Plant description</p>
+            <dl aria-label="attributes">
+              <dt></dt>
+            </dl>
+          </article>
+        </li>
+      </ul>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .Hero {
+    padding-inline: clamp(var(--space-m), var(--space-3xl), 10vw);
+    padding-block: 1rem;
+    background-image: linear-gradient(13deg, rgb(var(--colour-primary)), rgb(var(--colour-secondary)));
+  }
+</style>
