@@ -1,4 +1,4 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 import lit from "@astrojs/lit";
@@ -11,5 +11,6 @@ import image from "@astrojs/image";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [lit(), solidJs(), image()]
+  output: "server",
+  integrations: [lit(), solidJs(), image()],
 });
