@@ -75,3 +75,9 @@ SolidJS for app like behaviour
 - https://cube.fyi/
 - https://itcss.io/
 - https://suitcss.github.io/
+
+# Blostm project ideas
+- Browse plants: Start with a list of plants and singular plant pages.
+- Explore ideas: Add category level pages based on different groupings (colour etc.).
+- Plan your garden: Allow you to put in flower beds and get suggestions for plants filtering by properties.
+- Grow: A user account to save your flower beds/garden stuff.
