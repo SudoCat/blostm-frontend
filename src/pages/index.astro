@@ -45,30 +45,9 @@ import Card from '../components/Card.astro';
 		min-height: 100vh;
 		padding: 1.5rem;
 		box-sizing: border-box;
-		/* background-image: url("/public/images/hero/martin-knize-JjT_7MwREm4-unsplash.jpg"); */
+		background-image: url("public/images/hero/calvin-kurlekar-jf-kMyCffZA-unsplash.jpg");
 		background-size: cover;
 		background-color: rgba(var(--colour-dark), 1);
-		animation: cover 60s steps(6) infinite forwards;
-	}
-	@keyframes cover {
-		0% {
-			background-image: url("public/images/hero/calvin-kurlekar-jf-kMyCffZA-unsplash.jpg");
-		}
-		16.6% {
-			background-image: url("/public/images/hero/glen-carrie-y8dgMhxaoKk-unsplash.jpg");
-		}
-		33% {
-			background-image: url("/public/images/hero/ignacio-correia-1_yycyoMT6g-unsplash.jpg");
-		}
-		50% {
-			background-image: url("/public/images/hero/martin-knize-JjT_7MwREm4-unsplash.jpg");
-		}
-		66.6% {
-			background-image: url("/public/images/hero/robert-katzki-KLcaQxlmhtk-unsplash.jpg");
-		}
-		83.33% {
-			background-image: url("/public/images/hero/veronica-reverse-qYwyRF9u-uo-unsplash.jpg");
-		}
 	}
 	.content {
 		grid-column: 2;
@@ -125,6 +104,7 @@ import Card from '../components/Card.astro';
 		font-style: italic;
 	}
 	.instructions {
+		display: none;
 		left: calc(-1*var(--space-xl));
 		line-height: 1.6;
 		margin: 1.5rem 0;
