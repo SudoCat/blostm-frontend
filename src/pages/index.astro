@@ -7,10 +7,6 @@ import Card from '../components/Card.astro';
 	<main data-theme="glitch">
 		<div class="content">
 			<h1>Welcome to <span class="text-gradient">Blostm</span></h1>
-			<p class="instructions">
-				To get started, open the directory <code>src/pages</code> in your project.<br />
-				<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-			</p>
 			<ul role="list" class="link-card-grid">
 				<Card
 					href="/categories/flowers"
@@ -56,12 +52,6 @@ import Card from '../components/Card.astro';
 		margin: auto;
 		padding: var(--space-m);
 	}
-	[data-theme="glass"] .content {
-		border: 1px solid rgba(var(--colour-light), 0.9);
-		border-radius: 30px;
-		backdrop-filter: blur(10px);
-		background-image: linear-gradient(#ffffffc2 0%, #ffffff1f 10%, #ffffff36);
-	}
 	[data-theme="glitch"] .content {
 		border: 1px solid rgba(var(--colour-light), 0.9);
 		/* border-radius: 0 120px 0 120px; */
@@ -69,14 +59,6 @@ import Card from '../components/Card.astro';
 	.content > * {
 		position: relative;
 		z-index: 1;
-	}
-	[data-theme="glass"] .content::before {
-		--bg-alpha: 0.5;
-		content: '';
-		position: absolute;
-		inset: -2px;
-		border-radius: inherit;
-		border: 1px solid rgba(var(--colour-dark), 0.05);
 	}
 	[data-theme="glitch"] .content::before {
 		content: '';
@@ -102,37 +84,6 @@ import Card from '../components/Card.astro';
 		background-size: 400%;
 		background-position: 0%;
 		font-style: italic;
-	}
-	.instructions {
-		display: none;
-		left: calc(-1*var(--space-xl));
-		line-height: 1.6;
-		margin: 1.5rem 0;
-		/* border: 2px solid rgba(var(--colour-primary), 50%); */
-		background-color: rgba(var(--colour-light), 1);
-		padding: 1rem;
-		border-radius: 0 0 10rem 0;
-		outline-offset: 4px;
-	}
-	.instructions::before {
-		content: '';
-		position: absolute;
-		inset: -6px 6px 6px -12px;
-		border: 2px dotted rgb(var(--colour-secondary));
-		border-radius: inherit;
-		mix-blend-mode: exclusion;
-		pointer-events: none;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
 	}
 	.link-card-grid {
 		display: grid;
